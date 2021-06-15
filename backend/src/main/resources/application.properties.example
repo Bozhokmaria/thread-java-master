@@ -1,0 +1,38 @@
+
+#-------------------------
+# Database PostgresSQL
+#-------------------------
+
+spring.datasource.driver-class-name=org.postgresql.Driver
+
+spring.datasource.username=postgres
+spring.datasource.password=postgres
+spring.datasource.url=jdbc:postgresql://localhost:5432/threaddb
+#-------------------------
+# ORM settings
+#-------------------------
+
+spring.jpa.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.show-sql=true
+
+spring.main.allow-bean-definition-overriding=true
+
+#-------------------------
+# auth0 settings
+#-------------------------
+
+auth0.secret-key:eyJhbGciOiJIUzI1NiJ9eyJzdWIiOiJKb2UifQ1KP0SsvENi7Uz1oQc07aXTL7kpQG5jBNIybqr601234561dds
+
+#-------------------------
+# Image Storage
+#-------------------------
+# Gyazo access-token - has to be changed to a real key from Gyazo
+gyazo.upload-url = https://upload.gyazo.com/api/upload
+gyazo.image-api-url = https://api.gyazo.com/api/images
+gyazo.access-token = your-access-token
+
+
+spring.jackson.serialization.fail-on-empty-beans=false
